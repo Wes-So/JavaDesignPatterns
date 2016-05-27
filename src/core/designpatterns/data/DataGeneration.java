@@ -30,6 +30,7 @@ public class DataGeneration {
 	
 	public PaymentPlanData createPaymentPlan() {
 		PaymentPlanData paymentPlan = new PaymentPlanData();
+		paymentPlan.setPaymentPlanId(9999L);
 		paymentPlan.setPaymentPlanDate(new Date());
 		return paymentPlan;
 	}

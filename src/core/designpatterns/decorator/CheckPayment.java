@@ -2,23 +2,24 @@ package core.designpatterns.decorator;
 
 import core.designpatterns.data.CheckPaymentData;
 import core.designpatterns.data.PaymentDueData;
+import core.designpatterns.data.PaymentPlanData;
 
 public class CheckPayment {
 	
 	
 	
 	public CheckPaymentData create(CheckPaymentData checkPaymentData){
-		//create checkPayment
-		System.out.println("Creating paymentDue with id:=" + 1111);
-		checkPaymentData.setCheckPaymentId(1111L);
-		
-		//create paymentDue
+ 		//create paymentDue
 		PaymentDueData paymentDueData = checkPaymentData.getPaymentDue();
-		createPaymentDue(paymentDueData);
+		paymentDueData.setPaymentDueId(2222L);
+		System.out.println("Creating paymentDue with the id:=" + paymentDueData.getPaymentDueId());
 		
-		//create xref_checkpayment_paymentdue
-		System.out.println( "Creating xref for checkPayment and PaymentDue with the following ids:=" + 
-		checkPaymentData.getCheckPaymentId() + "," + paymentDueData.getPaymentDueId());
+		//get paymentPlan info
+		PaymentPlanData paymentPlan = checkPaymentData.getPaymentPlan();
+		
+		//create xref_paymentplan_paymentdue
+		System.out.println( "Creating xref for PaymentPlan and PaymentDue with the following ids:=" + 
+		paymentPlan.getPaymentPlanId() + "," + paymentDueData.getPaymentDueId());
 		
 		//adding notelines
 		System.out.println("Adding notelines for this created check payment");
@@ -26,8 +27,4 @@ public class CheckPayment {
 		return checkPaymentData;
 	}
 	
-	private PaymentDueData createPaymentDue(PaymentDueData paymentDueData){
-		paymentDueData.setPaymentDueId(2222L);
-		return paymentDueData;
-	}	
-}
+ }

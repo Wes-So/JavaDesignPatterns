@@ -3,16 +3,16 @@ package core.designpatterns.data;
 import java.util.Date;
 
 public class PaymentPlanData {
-	private Long paymentPlan;
+	private Long paymentPlanId;
 
 	private Date paymentPlanDate;
 	
-	public Long getPaymentPlan() {
-		return paymentPlan;
+	public Long getPaymentPlanId() {
+		return paymentPlanId;
 	}
 
-	public void setPaymentPlan(Long paymentPlan) {
-		this.paymentPlan = paymentPlan;
+	public void setPaymentPlanId(Long paymentPlan) {
+		this.paymentPlanId = paymentPlan;
 	}
 
 	public Date getPaymentPlanDate() {

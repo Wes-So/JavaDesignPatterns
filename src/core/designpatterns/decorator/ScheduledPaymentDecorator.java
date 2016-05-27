@@ -1,6 +1,7 @@
 package core.designpatterns.decorator;
 
 import core.designpatterns.data.CheckPaymentData;
+import core.designpatterns.data.PaymentDueData;
 import core.designpatterns.data.ScheduledPaymentData;
 
 public class ScheduledPaymentDecorator extends CheckPaymentDecorator {
@@ -19,11 +20,13 @@ public class ScheduledPaymentDecorator extends CheckPaymentDecorator {
 		sp.setScheduledPaymentId(3333L);
 		System.out.println("Creating scheduledPayment with id:=" + sp.getScheduledPaymentId());
 		
- 
+		//get paymentDueData
+		PaymentDueData paymentDue = checkPaymentData.getPaymentDue();
+		
 		//create xref_scheduledpayment_paymentdue
 		System.out.println(
 		"Creating xref for scheduledPayment and PaymentDue with the following ids:=" + 
-		checkPaymentData.getCheckPaymentId() + "," + sp.getScheduledPaymentId());
+				paymentDue.getPaymentDueId() + "," + sp.getScheduledPaymentId());
  
 		return checkPaymentData;
 	} 
