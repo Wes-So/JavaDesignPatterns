@@ -13,6 +13,15 @@ public class DataGeneration {
 		checkPayment.setScheduledPayment(createScheduledPayment());
 		return checkPayment;
 	}
+
+	public CheckPaymentData createCheckPaymentDataNoRevspring(){
+		
+		CheckPaymentData checkPayment = new CheckPaymentData();
+		checkPayment.setPaymentDue(createPaymentDue());
+		checkPayment.setPaymentPlan(createPaymentPlan()); 
+		checkPayment.setScheduledPayment(createScheduledPayment());
+		return checkPayment;
+	}
 	
 	public ScheduledPaymentData createScheduledPayment(){
 		ScheduledPaymentData sp = new ScheduledPaymentData();
