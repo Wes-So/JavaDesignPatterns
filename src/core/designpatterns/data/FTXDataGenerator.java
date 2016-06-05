@@ -2,7 +2,7 @@ package core.designpatterns.data;
 
 import java.util.Date;
 
-public class DataGeneration {
+public class FTXDataGenerator {
 
 	public CheckPaymentData createCheckPaymentData(){
 		

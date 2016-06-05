@@ -1,13 +1,13 @@
 package core.designpatterns.decorator;
 
 import core.designpatterns.data.CheckPaymentData;
-import core.designpatterns.data.DataGeneration;
+import core.designpatterns.data.FTXDataGenerator;
 
 public class CheckPaymentManagement {
 
 	public static void main(String[] args) { 
 		//Simulates a web service call with data as input
-		DataGeneration dataGen = new DataGeneration();
+		FTXDataGenerator dataGen = new FTXDataGenerator();
 		
 		System.out.println("*****Create without revspring*****");
 		createCheckPaymentService(dataGen.createCheckPaymentData()); 
@@ -33,10 +33,4 @@ public class CheckPaymentManagement {
 			spDecorator.create(checkPaymentData);
 		}
 	}
-
- 
-	
-	
-	
-	
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="core.designpatterns.bridge.Party" project="JavaDesignPatterns" 
+    file="/JavaDesignPatterns/src/core/designpatterns/bridge/Party.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="201" y="209"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="core.designpatterns.bridge.Person" project="JavaDesignPatterns" 
+    file="/JavaDesignPatterns/src/core/designpatterns/bridge/Person.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="78" y="408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="core.designpatterns.bridge.Organization" project="JavaDesignPatterns" 
+    file="/JavaDesignPatterns/src/core/designpatterns/bridge/Organization.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="321" y="406"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="core.designpatterns.bridge.Role" project="JavaDesignPatterns" 
+    file="/JavaDesignPatterns/src/core/designpatterns/bridge/Role.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="786" y="210"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="core.designpatterns.bridge.AppUser" project="JavaDesignPatterns" 
+    file="/JavaDesignPatterns/src/core/designpatterns/bridge/AppUser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1044" y="94"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="8">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="9" name="role"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="11">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
