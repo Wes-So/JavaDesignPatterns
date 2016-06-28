@@ -1,4 +1,4 @@
-package core.designpatterns.decorator.optionA;
+package core.designpatterns.decorator;
 
 import core.designpatterns.data.ftx.CheckPaymentData;
 import core.designpatterns.data.ftx.PaymentDueData;
