@@ -1,8 +1,6 @@
-package core.designpatterns.data;
+package core.designpatterns.data.ftx;
 
 public class CheckPaymentData {
-	private PaymentPlanData paymentPlan;
-	private PaymentDueData paymentDue;
 	private RevspringPaymentData revspringPayment;
 	private ScheduledPaymentData scheduledPayment;
 	private Long checkPaymentId;	
@@ -15,18 +13,7 @@ public class CheckPaymentData {
 		this.checkPaymentId = checkPaymentId;
 	}
 	
-	public PaymentPlanData getPaymentPlan() {
-		return paymentPlan;
-	}
-	public void setPaymentPlan(PaymentPlanData paymentPlan) {
-		this.paymentPlan = paymentPlan;
-	}
-	public PaymentDueData getPaymentDue() {
-		return paymentDue;
-	}
-	public void setPaymentDue(PaymentDueData paymentDue) {
-		this.paymentDue = paymentDue;
-	}
+
 	public RevspringPaymentData getRevspringPayment() {
 		return revspringPayment;
 	}

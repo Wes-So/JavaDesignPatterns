@@ -1,13 +1,14 @@
 package core.designpatterns.decorator.optionA;
 
-import core.designpatterns.data.CheckPaymentData;
+import core.designpatterns.data.ftx.CheckPaymentData;
 
 public abstract class CheckPaymentDecorator implements CheckPayment {
 	
-	protected CheckPayment wrappedCheckPayment;
+	protected CheckPayment wrappedCheckPayment; 
 	
 	public CheckPaymentDecorator(CheckPayment wrappedCheckPayment){
 		this.wrappedCheckPayment = wrappedCheckPayment;
+	
 	}
 
 	@Override

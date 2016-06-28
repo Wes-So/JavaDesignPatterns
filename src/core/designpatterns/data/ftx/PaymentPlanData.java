@@ -1,12 +1,20 @@
-package core.designpatterns.data;
+package core.designpatterns.data.ftx;
 
 import java.util.Date;
 
 public class PaymentPlanData {
 	private Long paymentPlanId;
-
 	private Date paymentPlanDate;
+	private RevspringPaymentPlanData revspringPaymentPlanData;
 	
+	public RevspringPaymentPlanData getRevspringPaymentPlanData() {
+		return revspringPaymentPlanData;
+	}
+
+	public void setRevspringPaymentPlanData(RevspringPaymentPlanData revspringPaymentPlanData) {
+		this.revspringPaymentPlanData = revspringPaymentPlanData;
+	}
+
 	public Long getPaymentPlanId() {
 		return paymentPlanId;
 	}

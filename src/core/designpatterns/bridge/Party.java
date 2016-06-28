@@ -1,6 +1,6 @@
 package core.designpatterns.bridge;
 
-import core.designpatterns.data.PartyData;
+import core.designpatterns.data.party.PartyData;
 
 public abstract class Party {
 

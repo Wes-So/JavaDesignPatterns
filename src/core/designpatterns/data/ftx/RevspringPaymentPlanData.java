@@ -1,4 +1,4 @@
-package core.designpatterns.data;
+package core.designpatterns.data.ftx;
 
 public class RevspringPaymentPlanData {
 	private String revspringPaymentPlanId;

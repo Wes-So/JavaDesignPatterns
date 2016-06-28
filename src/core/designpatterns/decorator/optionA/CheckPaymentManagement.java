@@ -1,7 +1,8 @@
 package core.designpatterns.decorator.optionA;
 
-import core.designpatterns.data.CheckPaymentData;
-import core.designpatterns.data.FTXDataGenerator;
+import core.designpatterns.data.ftx.CheckPaymentData;
+import core.designpatterns.data.ftx.FTXDataGenerator;
+import core.designpatterns.data.ftx.PaymentDueData;
 
 
 public class CheckPaymentManagement {
@@ -9,12 +10,15 @@ public class CheckPaymentManagement {
 	public static void main(String[] args) {
 		//Simulates a web service call with data as input
 		FTXDataGenerator dataGen = new FTXDataGenerator();
+		PaymentDueData paymentDue = dataGen.createPaymentDueCheck();
+		paymentDue.setPaymentDueId(0000L);
 		
 		System.out.println("*****Create with revspring*****");
-		createCheckPaymentService(dataGen.createCheckPaymentData());
+		createCheckPaymentService(paymentDue.getCheckPaymentData());
 	}
 
 	public static void createCheckPaymentService(CheckPaymentData data){
+		
 		CheckPayment checkPayment = new RevspringPaymentDecorator(new ScheduledPaymentDecorator(new CheckPaymentImpl()));
 		checkPayment.create(data);
 	}

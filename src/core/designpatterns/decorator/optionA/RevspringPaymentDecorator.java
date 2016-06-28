@@ -1,14 +1,13 @@
 package core.designpatterns.decorator.optionA;
 
-import core.designpatterns.data.CheckPaymentData;
-import core.designpatterns.data.PaymentDueData;
-import core.designpatterns.data.RevspringPaymentData;
+import core.designpatterns.data.ftx.CheckPaymentData;
+import core.designpatterns.data.ftx.PaymentDueData;
+import core.designpatterns.data.ftx.RevspringPaymentData;
 
 public class RevspringPaymentDecorator extends CheckPaymentDecorator {
 
 	public RevspringPaymentDecorator(CheckPayment wrappedCheckPayment) {
 		super(wrappedCheckPayment);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
@@ -17,9 +16,9 @@ public class RevspringPaymentDecorator extends CheckPaymentDecorator {
 		
 		//create revspringPayment
 		RevspringPaymentData rsPayment = checkPaymentData.getRevspringPayment();
-		PaymentDueData paymentDue = checkPaymentData.getPaymentDue();
-		System.out.println("Creating revspring payment with the following ids:=" + 
-		paymentDue.getPaymentDueId() + "," + rsPayment.getRevspringPaymentId()); 
+//
+//		System.out.println("Creating revspring payment with the following ids:=" + 
+//		paymentDueId + "," + rsPayment.getRevspringPaymentId()); 
 	} 	
 
 }

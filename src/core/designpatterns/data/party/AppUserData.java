@@ -1,4 +1,4 @@
-package core.designpatterns.data;
+package core.designpatterns.data.party;
 
 public class AppUserData extends PartyInRoleData{
 	private String userName;

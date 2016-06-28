@@ -1,7 +1,7 @@
 package core.designpatterns.bridge;
 
-import core.designpatterns.data.PartyData;
-import core.designpatterns.data.PersonData;
+import core.designpatterns.data.party.PartyData;
+import core.designpatterns.data.party.PersonData;
 
 public class Person extends Party {
 

@@ -1,7 +1,7 @@
 package core.designpatterns.bridge;
 
-import core.designpatterns.data.PartyData;
-import core.designpatterns.data.PartyInRoleData;
+import core.designpatterns.data.party.PartyData;
+import core.designpatterns.data.party.PartyInRoleData;
 
 public class AppUser implements Role {
 
