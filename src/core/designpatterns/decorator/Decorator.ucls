@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="core.designpatterns.decorator.CheckPayment" project="JavaDesignPatterns" 
     file="/JavaDesignPatterns/src/core/designpatterns/decorator/CheckPayment.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="254" x="29" y="96"/>    
+    <position height="-1" width="-1" x="158" y="71"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,7 +13,7 @@
   <class id="2" language="java" name="core.designpatterns.decorator.CheckPaymentDecorator" project="JavaDesignPatterns" 
     file="/JavaDesignPatterns/src/core/designpatterns/decorator/CheckPaymentDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="468" y="144"/>    
+    <position height="-1" width="-1" x="959" y="146"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
     project="JavaDesignPatterns" 
     file="/JavaDesignPatterns/src/core/designpatterns/decorator/RevspringPaymentDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="700" y="440"/>    
+    <position height="-1" width="-1" x="775" y="348"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
     project="JavaDesignPatterns" 
     file="/JavaDesignPatterns/src/core/designpatterns/decorator/ScheduledPaymentDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="694" y="291"/>    
+    <position height="-1" width="-1" x="1351" y="313"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -43,22 +43,26 @@
     </display>  
   </class>  
   <generalization id="5">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="6">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="7">    
+  <generalization id="6">    
     <bendpoint x="11" y="250"/>    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <association id="8">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="9" name="checkPayment"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
+      <attribute id="9" name="checkPayment">        
+        <position height="0" width="0" x="2" y="-74"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="1">        
+        <position height="0" width="0" x="2" y="-74"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
