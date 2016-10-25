@@ -11,14 +11,16 @@ public class PaymentManagementSvcImpl {
 	@Test
 	public void testAddPayment(){ 
 		PaymentData paymentData = createPaymentData();
-		payment.add(paymentData); 
+		payment.add(paymentData);
+		System.out.println("******"); 
  	}
 
 	@Test
 	public void testCancelPayment(){ 
 		PaymentData paymentData = createPaymentData();
 		paymentData.setPaymentDueId(2000L);
-		payment.cancel(paymentData); 
+		payment.cancel(paymentData);
+		System.out.println("******"); 
  	}	
 	
 	

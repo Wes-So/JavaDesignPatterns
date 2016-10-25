@@ -7,7 +7,7 @@ import core.designpatterns.data.ftx.PaymentData;
 
 public class PaymentImpl implements Payment {
 	static long paymentKey = 10000;
-	List<Observer> observers =  Arrays.asList(new AccountDisposition(), new AccountNoteline());
+	List<Observer> observers =  Arrays.asList(new AccountDisposition(), new AccountNoteline(), new Logging(), new Monitoring());
 
 	@Override
 	public long add(PaymentData paymentData) {
